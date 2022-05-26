@@ -55,10 +55,10 @@ export default class Command extends BaseCommand {
     const results = [
       "lose",
       "win",
+      "Win",
       "lose",
-      "lose",
-      "lose",
-      "lose",
+      "Jakpot",
+      "Jakpot",
       "lose",
       "win",
       "win",
@@ -85,8 +85,8 @@ export default class Command extends BaseCommand {
           amount - wallet
         } gold in your wallet to bet with this amount>*`
       );
-    if (amount > 15000)
-      return void M.reply(`🟥 *You can't bet more than 15000 gold*.`);
+    if (amount > 150)
+      return void M.reply(`🟥 *You can't bet more than 15000000 gold*.`);
     const head = `🎰 *SLOT MACHINE* 🎰`;
     const buttons = [
       {
